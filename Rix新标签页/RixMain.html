@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RixTAB</title>
+    <link rel="icon" href="/Imges/icon/Main.png" type="image/png">
+    <link rel="stylesheet" href="/conmon/css/com.css">
+    <link rel="stylesheet" href="/document/· font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div id="comBody">
+        <div id="setting_icon" class="shadow_com"></div>
+        <div id="black_ground">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="img_div">
+            <img src="" alt="" id="background_img" style="transition: all 1s; transform: scale(1.2, 1.2);">
+        </div>
+        <div id="MainArea">
+            <div style="width: 30%; text-align: center; position: relative; display: flex;justify-content: center;" >
+                
+                <div id="serachInput" class="shadow_com serachInput" style="width: 0px;">
+    
+                    <div class="select_seach shadow_com">
+                        <span id="Bing_Icon" serachData="bing"></span>
+                        <span id="Baidu_Icon" serachData="baidu"></span>
+                        <span id="Csdn_Icon" serachData="csdn"></span>
+                        <span id="Bilibili_Icon" serachData="bilibili"></span>
+                        <span id="custom_Icon" serachData="custom"></span>
+                    </div>
+    
+                    <span id="selectArea" target_icon="bing"></span>
+                    <input type="text" id="mainInput" placeholder="Serach........">
+                    <div id="div_button">
+                        <button id="submitBtn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tilte_text">
+            <p>—— By：RixRenex ——</p>
+        </div>
+        <div id="setting_View" class="shadow_com">
+            <div class="setting_view_close">
+                <b>设置</b>
+                <span></span>
+            </div>
+    
+            <i>自定义图片背景请选择 插件/Imges/background/路径下的图片!</i>
+    
+            <form action="" style="width: 100%;">
+                <div>
+                    <input type="radio" id="pure_color" name="background">
+                    <label for="pure_color"><i>纯色背景</i></label>
+                    
+                    <div class="color_list">
+                        <table>
+                            <tr>
+                                <td style="background-color: #3f76a5"></td>
+                                <td style="background-color: #3f44a5"></td>
+                                <td style="background-color: #a53f95"></td>
+                                <td style="background-color: #7e7e7e"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #a53f3f"></td>
+                                <td style="background-color: #ff8a00"></td>
+                                <td style="background-color: #71a53f"></td>
+                                <td style="background-color: #3f9fa5"></td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                </div>
+                <div>
+                    <input type="radio" id="custom_background" name="background" checked=checked">
+                    <label for="custom_background"><i>自定义背景</i></label>
+                    <label for="files_background" id="clickBack"></label>
+                    <input type="file" id="files_background" accept="jpg/png" name="file" hidden>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/document/jquery-3.2.1.min.js"></script>    
+    <script src="/conmon/js/com.js"></script>
+</body>
+</html>

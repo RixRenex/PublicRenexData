@@ -1,0 +1,12 @@
+{
+    "name": "rix标签页",
+    "short_name": "Rix标签页",
+    "version": "1.0",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "chrome_url_overrides": {
+        "newtab": "RixMain.html"
+    },
+    "manifest_version": 2
+}

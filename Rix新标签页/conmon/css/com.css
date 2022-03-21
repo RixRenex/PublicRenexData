@@ -1,0 +1,278 @@
+#comBody{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.img_div{
+    transition: all .5s;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+}
+#background_img{
+    transition: all 1s;
+
+}
+#MainArea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+.shadow_com{
+    box-shadow : 0px 0px 20px -10px #000;
+}
+#serachInput{
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 6px;
+    border-radius: 25px;
+    line-height: 30px;
+    height: 30px;
+}
+#selectArea{
+    cursor: pointer;
+    flex: 0 0 30px;
+    margin-right: 5px;
+    border-radius: 100px;
+    background: rgb(46, 46, 46) url("/Imges/icon/BingSerach.png") center center no-repeat;
+    background-size: 15px 20px;
+    padding-right: 10px;
+}
+#div_button {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    width: 70px;
+}
+#submitBtn{
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    line-height: 50px;
+    background: url("/Imges/icon/Serach.png") right top no-repeat;
+    background-size: contain;
+}
+#mainInput{
+    opacity: .7;
+    flex: 0 0 80%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 16px;
+}
+#submitBtn:focus,
+#mainInput:focus{
+    outline: none;
+    border: none;
+}
+
+.select_seach{
+    transform: translateY(-55px);
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s;
+    border-radius: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.302);
+}
+.select_seach>span{
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0;
+}
+.select_seach>span:hover{
+    transform: scale(.95,.95);
+}
+.select_seach>#Bing_Icon{
+    background: url("/Imges/icon/BingSerach.png") center center no-repeat;
+    background-size: 15px 20px;
+}
+.select_seach>#Baidu_Icon {
+    background: url("/Imges/icon/BaiduSerach.png") center center no-repeat;
+    background-size: 20px 20px;
+}
+.select_seach>#Csdn_Icon {
+    background: url("/Imges/icon/csdn.png") center center no-repeat;
+    background-size: 15px 20px;
+}
+.select_seach>#Bilibili_Icon {
+    background: url("/Imges/icon/bilibili.png") center center no-repeat;
+    background-size: contain;
+}
+.select_seach>#custom_Icon {
+    background: url("/Imges/icon/custom.png") center center no-repeat;
+    background-size: 18px 18px;
+}
+
+#black_ground{
+    transition: all .3s;
+    overflow: hidden;
+}
+#black_ground>div{
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1.2s;
+    top: 0vh;
+}
+#black_ground>div:nth-child(2){
+    top: 50vh;
+}
+
+.tilte_text{
+    transition: .4s;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    top: 0px;
+    margin-top: 36%;
+    color: rgb(119, 119, 119);
+}
+.tilte_text.hide{
+    opacity: 0;
+}
+.tilte_text>p{
+    align-self: flex-end;
+}
+
+#setting_icon{
+    cursor: pointer;
+    transition: all .8s;
+    transition-timing-function: cubic-bezier(0.39, -0.67, 0.37, 1.57);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 50;
+    background: url("/Imges/icon/setting.png") center center no-repeat;
+    background-size: contain;
+}
+#setting_icon:hover{
+    transform: rotate(180deg) scale(.95, .95);
+}
+#setting_icon.show{
+    transform: translateX(0px) rotate(0deg) scale(.95, .95);
+}
+#setting_icon.hide {
+    transform: translateX(100px) rotate(180deg) scale(.95, .95);
+}
+#setting_View{
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 1s;
+    transform: translate(500px,-500px);
+}
+#setting_View>form{
+    align-self: flex-end;
+}
+#setting_View>form>div{
+    margin: 10px 0;
+}
+#setting_View>form label>i{
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration:underline;
+}
+#setting_View>form input{
+    cursor: pointer;
+}
+.color_list{
+    overflow: hidden;
+    height: 0px;
+    transition: .8s;
+    padding: 0px;
+}
+.color_list tr{
+    margin: 10px 0;
+}
+.color_list>table{
+    width: 100%;
+}
+.color_list tr td{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.295);
+    transition: all .5s;
+    height: 67px;
+    background-color: rgb(91, 178, 255);
+}
+.color_list tr td:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.295);
+    transform: scale(1.1, 1.1);
+}
+.color_list.show{
+    height: 150px;
+    padding: 10px;
+}
+#setting_View>.setting_view_close{
+    align-self: flex-start;
+    padding: 10px;
+    border-bottom: 2px solid rgb(143, 143, 143);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#setting_View>.setting_view_close>b{
+    font-size: 15px;
+    opacity: .6;
+}
+#setting_View>.setting_view_close>span{
+    display: inline-block;
+    filter: contrast(0%);
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    transition: all .5s;
+    background: url("/Imges/icon/custom.png") center center no-repeat;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+#setting_View>.setting_view_close>span:hover{
+    transform: rotate(135deg);
+}
